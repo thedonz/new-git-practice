@@ -1,0 +1,9 @@
+ul {
+  list-style-type: none;
+}
+
+h3:before {
+  content: '\02193';
+  float: left;
+  padding-right: .5em;
+}
