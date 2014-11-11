@@ -59,9 +59,9 @@
 
           <hr>
          <p>
-            <a href="" class="followers">4 Follower</a>
-            <a href="" class="starred">2 Starred</a>
-            <a href="" class="following">0 Following</a>
+            <a href="" class="followers">1 Follower</a>
+            <a href="" class="starred">5 Starred</a>
+            <a href="" class="following">13 Following</a>
           </p>
  
           <hr>
@@ -123,8 +123,6 @@
             <section id="repos">
               <section class="listOfRepos col-sm-12 col-md-12">
                 <ul class="repoList list-unstyled">
-                  <a href="#"><li><h3>LoganArnett.github.io</h3></li></a>
-                  <hr>
                   <a href="#"><li><h3>TIY-Assignments</h3></li></a>
                   <hr>
                   <a href="#"><li><h3>25--Scotts-Tots</h3></li></a>
@@ -145,22 +143,15 @@
             <section id="activity">
               <section class="listOfActive col-sm-12 col-md-12">
                 <ul class="activeList list-unstyled">
-                  <a href="#"><li><h3>PR #1</h3></li></a>
+                  <a href="#"><li><h3>xdonze pushed to master at xdonze/xdonze.github.io</h3></li></a>
                   <hr>
-                  <a href="#"><li><h3>Commit #7</h3></li></a>
+                  <a href="#"><li><h3>xdonze pushed to Front-End at xdonze/new-git-practice</h3></li></a>
                   <hr>
-                  <a href="#"><li><h3>Issue #3</h3></li></a>
+                  <a href="#"><li class="octicon octicon-repo-forked"><h3>xdonze created branch Front-End at xdonze/new-git-practice</h3></li></a>
                   <hr>
-                  <a href="#"><li><h3>Push #4</h3></li></a>
+                  <a href="#"><li><h3>xdonze pushed to 27--github-profile</h3></li></a>
                   <hr>
-                  <a href="#"><li><h3>PR #22</h3></li></a>
-                  <hr>
-                  <a href="#"><li><h3>Push to Master #17</h3></li></a>
-                  <hr>
-                  <a href="#"><li><h3>Issue #2</h3></li></a>
-                  <hr>
-                  <a href="#"><li><h3>Commit #18</h3></li></a>
-                  <hr>
+                  <a href="#"><li><h3>xdonze commented on pull request</h3></li></a>
                 </ul>
               </section>
             </section>
@@ -169,6 +160,29 @@
       </div>
     </div>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="scripts.js"></script>
+      
+  
+  
+  
+  
+  
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script>
+      function drop(id) {
+          var navID = ['contrib','repos','activity'];
+          var dropDown = document.getElementById(id);
+          navID.forEach(function(value,index){
+            var dropMenu = value + 'menu';
+              if(value==id){
+                  dropDown.style.display = 'block';
+                  document.getElementById(dropMenu).style.borderColor = 'lightgray'
+                  document.getElementById(dropMenu).style.borderBottomColor = 'white'
+              }else{
+                  document.getElementById(value).style.display = 'none';
+                  document.getElementById(dropMenu).style.borderColor = 'transparent'
+              };
+          });
+        }
+    </script>
   </body>
 </html>
